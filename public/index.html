@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KEBIP HERBAL</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Kebip Herbal — luxury herbal solutions for acne, weight loss, menstrual relief, glowing skin and hair. 100% natural ingredients.">
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+  <div class="container">
+    <!-- Logo + Brand -->
+    <div class="brand">
+      <img src="kebip logo.jpeg" alt="Kebip Herbal Logo">
+      <span>KEBIP HERBAL</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="navMenu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#solutions">Solutions</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hamburger -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('navMenu');
+
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+</script>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Glow Naturally with Kebip</h1>
+      <p>Luxury Herbal Solutions for Acne, Weight, Menstrual Pain, Glowing Skin & More — Because Your Body Deserves Pure Nature.</p>
+      <a href="https://wa.me/254712345678?text=Hi%20Kebip%20Team,%20I%20am%20interested%20in%20your%20products" class="btn">Order Now on WhatsApp</a>
+    </div>
+  </section>
+
+   <!-- About -->
+  <section id="about" class="about">
+    <h2>About Kebip</h2>
+    <p>At Kebip Herbal, we believe that true beauty and wellness start from nature. Drawing on the rich heritage of traditional herbal medicine, we carefully blend time-tested plants with modern research to craft products that support the body’s natural healing and rejuvenation processes. From soothing menstrual discomfort to enhancing skin glow and vitality, each formula is created with 100% natural ingredients to deliver results you can feel and see — without harsh chemicals or shortcuts..</p>
+    
+<script>
+  // fade-in animation when section enters viewport
+  document.addEventListener("scroll", () => {
+    const aboutSection = document.querySelector(".about");
+    const rect = aboutSection.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      aboutSection.classList.add("in-view");
+    }
+  });
+</script>
+ 
+  <!-- About Content -->
+  <section class="about-content">
+    <div class="about-item">
+      <img src="kebpic.jpg" alt="Herbal Product 1">
+      <div class="about-text">
+        <h2>Natural Healing</h2>
+        <p>Our first formula is crafted from ancient herbs to support your skin health and overall wellness naturally.</p>
+      </div>
+    </div>
+
+    <div class="about-item reverse">
+      <img src="herbal2.jpg" alt="Herbal Product 2">
+      <div class="about-text">
+        <h2>Luxury & Purity</h2>
+        <p>Combining premium quality with tradition, we make sure your body only receives the purest natural goodness.</p>
+      </div>
+    </div>
+
+    <div class="about-item">
+      <img src="herbal3.jpg" alt="Herbal Product 3">
+      <div class="about-text">
+        <h2>Glow From Within</h2>
+        <p>Our signature herbal blends are designed to rejuvenate your skin, hair and energy from within.</p>
+      </div>
+    </div>
+  </section>
+
+  <!---Solution--->
+  <section class="featured-products">
+    <h2>Signature Herbal Treatments</h2>
+
+    <!-- BeginningProduct Row 1 -->
+  <div class="product-row">
+      <div class="product-image">
+        <img src="black hair.webp" alt="Acne Treatment">
+      </div>
+      <div class="product-info">
+        <h3>Acne Treatment</h3>
+        <p>Our acne formula calms inflammation and promotes clear, radiant skin using natural plant extracts. Perfect for sensitive skin types.</p>
+        <a href="#products" class="btn">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Product Row 2 -->
+    <div class="product-row reverse">
+      <div class="product-image">
+        <img src="Weight loss.jpeg" alt="Weight Loss">
+      </div>
+      <div class="product-info">
+        <h3>Weight Management Blend</h3>
+        <p>A gentle herbal blend that supports metabolism, helps curb cravings, and boosts energy for a healthier lifestyle.</p>
+        <a href="#products" class="btn">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Product Row 3 -->
+    <div class="product-row">
+      <div class="product-image">
+        <img src="menstrual pain.webp" alt="Menstrual Pain Relief">
+      </div>
+      <div class="product-info">
+        <h3>Menstrual Pain Relief</h3>
+        <p>Our soothing herbal infusion helps ease cramps and restore comfort during your cycle naturally without harsh chemicals.</p>
+        <a href="#products" class="btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+<!---#end of product sectionsolution-->
+
+  <!-- Health / Beauty Solutions -->
+  <section id="solutions" class="solutions">
+    <h2>Our Health & Beauty Solutions</h2>
+    <p>KEBIP Natural Herbs Solutions to your everyday health and wellness needs.</p>
+    
+    <div class="solutions-grid">
+      <div class="solution-card">
+        <h3>Menstrual Pains</h3>
+        <p>Relief from cramps and discomfort using natural herbs.</p>
+      </div>
+      <div class="solution-card">
+        <h3>Body Cleansing</h3>
+        <p>Detoxify and refresh your system naturally.</p>
+      </div>
+      <div class="solution-card">
+        <h3>Infections</h3>
+        <p>Natural support for your body’s immunity and defense.</p>
+      </div>
+      <div class="solution-card">
+        <h3>Weight Loss</h3>
+        <p>Effective weight management with herbal solutions.</p>
+      </div>
+      <div class="solution-card">
+        <h3>Fever & Cold</h3>
+        <p>Herbal blends to soothe fever and cold symptoms.</p>
+      </div>
+      <div class="solution-card">
+        <h3>Fertility</h3>
+        <p>Supporting reproductive health naturally.</p>
+      </div>
+      <div class="solution-card">
+        <h3>Back & Chest Pains</h3>
+        <p>Ease pain and restore your body’s comfort.</p>
+      </div>
+      <div class="solution-card">
+        <h3>Manpower</h3>
+        <p>Boost your vitality and energy with pure herbal power.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="products">
+    <h2>Our Herbal Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="acne powder.jpeg" alt="Acne Treatment">
+        <h3>Acne Treatment</h3>
+        <button onclick="order('Acne Treatment')">Order on WhatsApp</button>
+      </div>
+      <div class="product-card">
+        <img src="jedi powder.jpeg" alt="Manpower Booster">
+        <h3>Manpower </h3>
+        <button onclick="order('Manpower Booster')">Order on WhatsApp</button>
+      </div>
+      <div class="product-card">
+        <img src="ALE.jpeg" alt="Weight Loss">
+        <h3>Weight Loss</h3>
+        <button onclick="order('Weight Loss')">Order on WhatsApp</button>
+      </div>
+      <div class="product-card">
+        <img src="Opayin.jpeg" alt="Menstrual Pain Relief">
+        <h3>Menstrual Pain Relief</h3>
+        <button onclick="order('Menstrual Pain Relief')">Order on WhatsApp</button>
+      </div>
+      <div class="product-card">
+        <img src="black soap.jpeg" alt="Glowing Skin">
+        <h3>Glowing Skin</h3>
+        <button onclick="order('Glowing Skin')">Order on WhatsApp</button>
+      </div>
+      <div class="product-card">
+        <img src="jedi powder.jpeg" alt="Black Hair Care">
+        <h3>Black Hair Care</h3>
+        <button onclick="order('Black Hair Care')">Order on WhatsApp</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <p>“Kebip’s acne treatment changed my skin in just weeks! Totally natural & effective.”</p>
+        <span>- Amina</span>
+      </div>
+      <div class="testimonial-card">
+        <p>“I’ve never felt so energetic. The herbal booster is amazing!”</p>
+        <span>- James</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you. Reach us easily through WhatsApp, email, or social media.</p>
+
+    <!-- WhatsApp -->
+    <div class="contact-option">
+      <a href="https://wa.me/254712345678?text=Hi%20Kebip%20Team,%20I%20want%20to%20order%20your%20products" target="_blank" class="whatsapp-btn">Chat on WhatsApp</a>
+    </div>
+
+    <!-- Email Form -->
+    <div class="contact-form">
+      <form action="mailto:info@kebipherbal.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="send-btn">Send Email</button>
+      </form>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="social-links">
+      <a href="https://www.tiktok.com/@kebip.natural.her" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      <a href="https://instagram.com/kebipnaturalherbs/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com/yourhandle" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com/yourhandle" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+  </section>
+
+ <section id="payment" class="payment-section">
+  <h2>Secure Online Payments</h2>
+  <p>We offer multiple safe and convenient ways for you to pay online. Choose your preferred option below:</p>
+
+  <div class="payment-grid">
+    <!-- M-Pesa (left) -->
+    <div class="payment-card">
+      <i class="fas fa-mobile-alt fa-3x"></i>
+      <h3>M-Pesa</h3>
+      <p>Use your mobile money wallet for quick and easy payments.</p>
+      <button class="btn" onclick="payWithMpesa()">Pay with M-Pesa</button>
+    </div>
+  </div>
+</section>
+
+<script>
+function payWithMpesa() {
+  const amount = 1; // test amount
+  const phone = '254708374149'; // test phone
+
+  fetch('/mpesa/stkpush', {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({ amount, phone })
+  })
+  .then(res => res.json())
+  .then(data => {
+    console.log('Response:', data);
+    alert('STK Push sent. Check your phone.');
+  })
+  .catch(err => console.error(err));
+}
+</script>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Kebip Herbal. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function order(productName){
+      const message = `Hi Kebip Team, I am interested in your ${productName}`;
+      window.open(`https://wa.me/254706277452?text=${encodeURIComponent(message)}`);
+    }
+
+    function toggleMenu(){
+      document.querySelector('.nav').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
