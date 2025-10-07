@@ -14,9 +14,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // === MPESA CONFIG ===
 const BUSINESS_SHORT_CODE = '174379';
-const PASSKEY = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919';
-const CONSUMER_KEY = 'JCuvrmtPPXSjsFQywwBvNbgGyR7CBcJKP10oIB7O7n8akGPO';
-const CONSUMER_SECRET = 'V9eZAyiEshGbHSfuU7UoLrw6oL9nYQtzzwfctCee2AGeg7j8Ml0IGRiDA56qZfRk';
+const PASSKEY = 'process.env.MPESA_CONSUMER_KEY';
+const CONSUMER_KEY = 'process.env.MPESA_CONSUMER_KEY';
+const CONSUMER_SECRET = 'process.env.MPESA_CONSUMER_SECRET';
 const CALLBACK_URL = 'https://your-ngrok-url.ngrok-free.app/callback'; // update with your ngrok URL
 
 // helpers
